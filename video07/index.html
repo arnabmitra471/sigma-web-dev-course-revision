@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Let's learn it !!</title>
+</head>
+
+<body>
+    <h1>Form to apply for sigma web development course TA</h1>
+    <form>
+        <div>
+            <label for="username">Enter your username</label>
+            <br>
+            <input type="text" name="username" id="username" placeholder="Enter your username" autofocus required>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" id="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" id="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes" required>
+            <label for="subscribe">Subscribe to our newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment here</label>
+            <br>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here..." rows="10" cols="30" required></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <div>
+            <label for="ppt">Please upload your ppt</label>
+            <input type="file" name="file_upload" id="ppt" accept=".pptx, .pdf">
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
