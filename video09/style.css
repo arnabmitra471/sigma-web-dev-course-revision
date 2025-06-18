@@ -10,9 +10,8 @@
     color: rgb(119, 99, 73);
     padding: 10px;
 }
-.city
-{
-    background-color: beige;
+.city {
+    background-color: #c8b9e1;
     text-decoration: underline;
-    color: firebrick
+    color: #455059;
 }
