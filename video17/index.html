@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        /* div{
+            background-color: red;
+            color: white;
+        } */
+        /* Class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* Id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child selectors */
+        /* Descendant selectors */
+        div p {
+            color: blue;
+            background-color: rgb(182, 207, 150);
+        }
+
+        div>p {
+            color: blue;
+            background-color: rgb(207, 150, 150);
+        }
+
+        /* Universal Selectors */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: yellow;
+        }
+
+        
+        a:hover {
+            color: purple;
+            background-color: bisque;
+        }
+        a:active {
+            background-color: red;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div !!
+        <div>
+            <p>Hi I am a para inside a div !!</p>
+            <p>Hi I am another para inside a div !!</p>
+            <section>
+                <p>Hi I am yet another para inside a div !!</p>
+                <p>Hi I am the fourth para inside a div !!</p>
+            </section>
+            <article>
+                <p>Hello I am a descendant but not a direct child of the outer div</p>
+            </article>
+        </div>
+    </div>
+    <div id="green">
+        I am yet another div !!
+    </div>
+   <h1>Suggested websites</h1>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.youtube.com">Go to youtube</a>
+</body>
+
+</html>
