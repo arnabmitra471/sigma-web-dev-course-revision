@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        /* CSS Specificity tells us that which selector is the most specific among
+        multiple types of selectors */
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: pink;
+        }
+
+        /* The specificity of this selector is 10 */
+        h1.text-yellow {
+            color: red;
+            background-color: powderblue;
+        }
+
+        /* The specificity of this selector is 100 */
+        /* #title {
+            color: thistle;
+            background-color: rgb(92, 145, 145);
+        } */
+
+        /* The specificity of this selector is 10 */
+        .c-red {
+            color: blueviolet;
+            background-color: coral;
+        }
+
+        /* The specificity of this selector is 10 */
+        .c-purple {
+            color: purple;
+            background-color: rgb(192, 163, 119);
+        }
+
+        /* The specificity of this selector is 10 */
+        [data-x="a"] {
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="title" class="text-yellow c-red c-purple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
